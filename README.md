@@ -36,3 +36,14 @@ Replace `your-signing-secret-here` and `your-bot-token-here` with the actual val
 6. In your Slack App's Event Subscriptions settings, enter the ngrok URL followed by `/slack/events` as the Request URL value.
 7. Subscribe to the `message.channels` event in your Slack App's Event Subscriptions settings.
 8. Send a message containing the word "quote" in a channel in your Slack workspace to test the bot.
+
+>[Click here to see video demonstrations](./demonstrations/)
+
+### JokeBot showing quotess when prompted <br />
+<img src="Demonstration/1.PNG" alt="picture shwoing output" width="800"/><br/>
+### Execution of code in replit <br/>
+<img src="Demonstration/2.PNG" alt="Picture showing execution" width="800"/>
+
+
+
+
