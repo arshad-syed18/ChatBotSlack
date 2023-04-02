@@ -2,6 +2,13 @@
 
 ChatBotSlack is a simple chatbot built using the Slack API and Node.js. It responds to messages containing the word "quote" with a random quote fetched from the https://api.quotable.io API.
 
+## Functionalities
+The Slack bot currently has two functionalities: quotes and jokes.
+To use them, simply ask the bot "quote" to receive a randomly generated quote, or ask "tell me a joke" to receive a funny joke.
+
+We are currently working on adding more options to the bot, so stay tuned for updates!
+
+
 ## Installation
 
 To run this project, you'll need to do the following:
