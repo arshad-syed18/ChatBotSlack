@@ -21,6 +21,17 @@ const app = new App({
       // replies to user with the quote
         await say(`Hello, <@${message.user}>, ${quote}`);
     });
+    app.message(/tell me a joke/i, async ({ message, say }) => {
+      console.log("User asked for a joke!");
+      // gets joke from joke API
+      let resp = await axios.get(`https://official-joke-api.appspot.com/random_joke`);
+     const setup = resp.data.setup;
+      const punchline = resp.data.punchline;
+      // replies to user with the joke
+      await say(`Sure, <@${message.user}>, here's a joke for you:\n\n${setup}\n${punchline}`);
+  });
+
+  
 
     console.log(`⚡ Bolt app is running!`);
 })();
